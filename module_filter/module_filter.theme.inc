@@ -103,6 +103,7 @@ function theme_module_filter_system_modules_tabs($variables) {
         $label .= ' for="' . $module['enable']['#id'] . '"';
       }
       $row[] = array('class' => array('name'), 'data' => $label . '><strong>' . drupal_render($module['name']) . '</strong> <span class="module-machine-name">(' . $key . ')</span></label>');
+      
       // Displaying the version column even though the version is not persent in the module
       // Reference link https://www.drupal.org/node/2460135
       if (variable_get('module_filter_version_column', 0)) {
