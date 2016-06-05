@@ -1,2 +1,3 @@
 new file
 Editing the txt file
+changing the new line
